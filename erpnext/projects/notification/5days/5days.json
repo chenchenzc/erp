@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.status==\"Open\"",
+ "creation": "2021-09-26 17:54:13.815060",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "\u63d0\u9192\u63d0\u9192",
+ "modified": "2021-09-26 18:42:49.956084",
+ "modified_by": "1218408851@qq.com",
+ "module": "Projects",
+ "name": "5days",
+ "owner": "Administrator",
+ "property_value": "",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Analytics"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "",
+ "subject": "5days"
+}

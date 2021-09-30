@@ -1,0 +1,13 @@
+{
+ "creation": "2021-09-23 18:00:13.991014",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2021-09-30 18:03:06.631393",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "Task prompt statistics",
+ "owner": "Administrator",
+ "source_name": "Task prompt statistics",
+ "timeseries": 0
+}

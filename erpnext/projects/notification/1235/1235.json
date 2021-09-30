@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.project_template==\"5\u5929\u75ab\u82d7\" and doc.status==\"Open\"",
+ "creation": "2021-09-26 18:45:50.182813",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message heredfsrwtnghjghj",
+ "modified": "2021-09-26 18:53:23.335319",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "1235",
+ "owner": "1218408851@qq.com",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.name}} Delivered"
+}

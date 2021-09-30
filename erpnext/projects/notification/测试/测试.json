@@ -1,0 +1,34 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status=='Open'",
+ "creation": "2021-09-24 15:15:44.209623",
+ "date_changed": "creation",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{ doc.name }} should make a plan to xxx",
+ "modified": "2021-09-24 15:15:44.209623",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "\u6d4b\u8bd5",
+ "owner": "Administrator",
+ "property_value": "Working",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "admin",
+ "sender_email": "1075091779@qq.com",
+ "set_property_after_alert": "status",
+ "subject": "\u6d4b\u8bd5"
+}

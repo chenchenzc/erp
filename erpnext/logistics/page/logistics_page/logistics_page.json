@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2021-09-24 11:55:56.726378",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-09-24 11:55:56.726378",
+ "modified_by": "Administrator",
+ "module": "Logistics",
+ "name": "logistics-page",
+ "owner": "Administrator",
+ "page_name": "logistics page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "logistics page test"
+}

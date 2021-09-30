@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.project_template==\"7\u5929\u75ab\u82d7\"",
+ "creation": "2021-09-26 14:54:42.565158",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "need  an 7days event",
+ "modified": "2021-09-26 17:31:34.714959",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "7days",
+ "owner": "Administrator",
+ "property_value": "{{doc.project_name}} notice",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "project_name",
+ "subject": "7days event notification"
+}
