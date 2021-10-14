@@ -6,7 +6,6 @@
  "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
- "extends": "Settings",
  "extends_another_page": 1,
  "hide_custom": 0,
  "icon": "settings",
@@ -15,7 +14,7 @@
  "is_standard": 1,
  "label": "ERPNext Settings",
  "links": [],
- "modified": "2021-06-12 01:58:11.399566",
+ "modified": "2021-10-13 17:34:25.015858",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "ERPNext Settings",
@@ -66,12 +65,6 @@
    "type": "DocType"
   },
   {
-   "icon": "retail",
-   "label": "Shopping Cart Settings",
-   "link_to": "Shopping Cart Settings",
-   "type": "DocType"
-  },
-  {
    "icon": "website",
    "label": "Portal Settings",
    "link_to": "Portal Settings",
@@ -109,13 +102,6 @@
    "icon": "setting",
    "label": "Domain Settings",
    "link_to": "Domain Settings",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "icon": "retail",
-   "label": "Products Settings",
-   "link_to": "Products Settings",
    "type": "DocType"
   }
  ]

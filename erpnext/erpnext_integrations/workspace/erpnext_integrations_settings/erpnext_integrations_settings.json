@@ -6,10 +6,10 @@
  "disable_user_customization": 0,
  "docstatus": 0,
  "doctype": "Workspace",
- "extends": "Settings",
  "extends_another_page": 1,
  "hide_custom": 0,
  "idx": 0,
+ "is_default": 0,
  "is_standard": 1,
  "label": "ERPNext Integrations Settings",
  "links": [
@@ -71,7 +71,7 @@
    "type": "Link"
   }
  ],
- "modified": "2020-12-01 13:38:34.732552",
+ "modified": "2021-10-12 18:30:48.922253",
  "modified_by": "Administrator",
  "module": "ERPNext Integrations",
  "name": "ERPNext Integrations Settings",

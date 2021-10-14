@@ -46,7 +46,6 @@ def get(chart_name = None, chart = None, no_cache = None, filters = None, from_d
         totalNumber.append(len(listcurrentday[i]))
         ddlNumber.append(len(listcurrentdue[i]))
         
-    print(totalNumber,ddlNumber)
     return {
         "labels": labels,
         "datasets": [

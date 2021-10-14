@@ -8,7 +8,7 @@
  ],
  "creation": "2020-03-02 15:41:59.515192",
  "developer_mode_only": 0,
- "disable_user_customization": 0,
+ "disable_user_customization": 1,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends_another_page": 0,
@@ -435,26 +435,6 @@
    "type": "Link"
   },
   {
-   "dependencies": "GL Entry",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "DATEV Export",
-   "link_to": "DATEV",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "GL Entry",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "UAE VAT 201",
-   "link_to": "UAE VAT 201",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "hidden": 0,
    "is_query_report": 0,
    "label": "Financial Statements",
@@ -508,43 +488,6 @@
    "label": "Consolidated Financial Statement",
    "link_to": "Consolidated Financial Statement",
    "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Multi Currency",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Currency",
-   "link_to": "Currency",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Currency Exchange",
-   "link_to": "Currency Exchange",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Exchange Rate Revaluation",
-   "link_to": "Exchange Rate Revaluation",
-   "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   },
@@ -700,182 +643,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Goods and Services Tax (GST India)",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "GST Settings",
-   "link_to": "GST Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "GST HSN Code",
-   "link_to": "GST HSN Code",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GSTR-1",
-   "link_to": "GSTR-1",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GSTR-2",
-   "link_to": "GSTR-2",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "GSTR 3B Report",
-   "link_to": "GSTR 3B Report",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GST Sales Register",
-   "link_to": "GST Sales Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GST Purchase Register",
-   "link_to": "GST Purchase Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GST Itemised Sales Register",
-   "link_to": "GST Itemised Sales Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "GST Itemised Purchase Register",
-   "link_to": "GST Itemised Purchase Register",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "C-Form",
-   "link_to": "C-Form",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Lower Deduction Certificate",
-   "link_to": "Lower Deduction Certificate",
-   "link_type": "DocType",
-   "onboard": 0,
-   "only_for": "India",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Share Management",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Shareholder",
-   "link_to": "Shareholder",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Share Transfer",
-   "link_to": "Share Transfer",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Share Transfer",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Share Ledger",
-   "link_to": "Share Ledger",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Share Transfer",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Share Balance",
-   "link_to": "Share Balance",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Cost Center and Budgeting",
    "onboard": 0,
    "type": "Card Break"
@@ -934,6 +701,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Opening and Closing",
+   "link_type": "",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -963,73 +731,6 @@
    "is_query_report": 0,
    "label": "Period Closing Voucher",
    "link_to": "Period Closing Voucher",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Taxes",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Taxes and Charges Template",
-   "link_to": "Sales Taxes and Charges Template",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Purchase Taxes and Charges Template",
-   "link_to": "Purchase Taxes and Charges Template",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Item Tax Template",
-   "link_to": "Item Tax Template",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Tax Category",
-   "link_to": "Tax Category",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Tax Rule",
-   "link_to": "Tax Rule",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Tax Withholding Category",
-   "link_to": "Tax Withholding Category",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -1082,7 +783,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-23 16:06:34.167267",
+ "modified": "2021-10-13 17:52:54.094256",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounting",

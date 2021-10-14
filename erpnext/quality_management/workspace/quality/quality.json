@@ -2,14 +2,15 @@
  "category": "Modules",
  "charts": [],
  "creation": "2020-03-02 15:49:28.632014",
- "developer_mode_only": 0,
- "disable_user_customization": 0,
+ "developer_mode_only": 1,
+ "disable_user_customization": 1,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends_another_page": 0,
  "hide_custom": 0,
  "icon": "quality",
  "idx": 0,
+ "is_default": 0,
  "is_standard": 1,
  "label": "Quality",
  "links": [
@@ -132,7 +133,7 @@
    "type": "Link"
   }
  ],
- "modified": "2020-12-01 13:38:35.120213",
+ "modified": "2021-10-08 09:56:26.916426",
  "modified_by": "Administrator",
  "module": "Quality Management",
  "name": "Quality",

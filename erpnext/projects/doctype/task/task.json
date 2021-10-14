@@ -77,7 +77,6 @@
    "oldfieldname": "project",
    "oldfieldtype": "Link",
    "options": "Project",
-   "remember_last_selected_value": 1,
    "search_index": 1
   },
   {
@@ -195,7 +194,6 @@
    "default": "0",
    "fieldname": "is_milestone",
    "fieldtype": "Check",
-   "in_list_view": 1,
    "label": "Is Milestone"
   },
   {
@@ -334,8 +332,7 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company",
-   "remember_last_selected_value": 1
+   "options": "Company"
   },
   {
    "fieldname": "lft",
@@ -398,7 +395,7 @@
  "is_tree": 1,
  "links": [],
  "max_attachments": 5,
- "modified": "2021-09-28 18:03:10.811387",
+ "modified": "2021-10-13 15:21:21.266726",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Task",
