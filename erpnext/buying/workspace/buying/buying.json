@@ -29,16 +29,6 @@
    "type": "Card Break"
   },
   {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Material Request",
-   "link_to": "Material Request",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
    "dependencies": "Item, Supplier",
    "hidden": 0,
    "is_query_report": 0,
@@ -46,6 +36,15 @@
    "link_to": "Purchase Order",
    "link_type": "DocType",
    "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Receipt",
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -102,34 +101,7 @@
    "label": "Item Group",
    "link_to": "Item Group",
    "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Settings",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Buying Settings",
-   "link_to": "Buying Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Terms and Conditions Template",
-   "link_to": "Terms and Conditions",
-   "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
@@ -162,6 +134,23 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Settings",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Buying Settings",
+   "link_to": "Buying Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Key Reports",
    "onboard": 0,
    "type": "Card Break"
@@ -183,7 +172,7 @@
    "label": "Purchase Order Analysis",
    "link_to": "Purchase Order Analysis",
    "link_type": "Report",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -193,7 +182,7 @@
    "label": "Items to Order and Receive",
    "link_to": "Requested Items to Order and Receive",
    "link_type": "Report",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -203,7 +192,7 @@
    "label": "Purchase Order Trends",
    "link_to": "Purchase Order Trends",
    "link_type": "Report",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -213,7 +202,7 @@
    "label": "Procurement Tracker",
    "link_to": "Procurement Tracker",
    "link_type": "Report",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -222,16 +211,6 @@
    "label": "Other Reports",
    "onboard": 0,
    "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Items To Be Requested",
-   "link_to": "Items To Be Requested",
-   "link_type": "Report",
-   "onboard": 1,
-   "type": "Link"
   },
   {
    "dependencies": "",
@@ -270,12 +249,12 @@
    "label": "Supplier Quotation Comparison",
    "link_to": "Supplier Quotation Comparison",
    "link_type": "Report",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2021-10-12 17:57:30.031265",
- "modified_by": "Administrator",
+ "modified": "2021-10-22 15:50:52.232427",
+ "modified_by": "1218408851@qq.com",
  "module": "Buying",
  "name": "Buying",
  "onboarding": "Buying",
@@ -284,27 +263,31 @@
  "pin_to_top": 0,
  "shortcuts": [
   {
-   "color": "Green",
-   "format": "{} Available",
-   "label": "Item",
-   "link_to": "Item",
-   "stats_filter": "{\n    \"disabled\": 0\n}",
-   "type": "DocType"
-  },
-  {
-   "color": "Yellow",
-   "format": "{} Pending",
-   "label": "Material Request",
-   "link_to": "Material Request",
-   "stats_filter": "{\n    \"company\": [\"like\", '%' + frappe.defaults.get_global_default(\"company\") + '%'],\n    \"status\": \"Pending\"\n}",
-   "type": "DocType"
-  },
-  {
    "color": "Yellow",
    "format": "{}  To Receive",
    "label": "Purchase Order",
    "link_to": "Purchase Order",
    "stats_filter": "{\n    \"company\": [\"like\", '%' + frappe.defaults.get_global_default(\"company\") + '%'],\n    \"status\":[\"in\", [\"To Receive\", \"To Receive and Bill\"]]\n}",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Purchase Receipt",
+   "link_to": "Purchase Receipt",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Purchase Invoice",
+   "link_to": "Purchase Invoice",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Available",
+   "label": "Item",
+   "link_to": "Item",
+   "stats_filter": "{\n    \"disabled\": 0\n}",
    "type": "DocType"
   },
   {

@@ -2,7 +2,7 @@
  "attach_print": 0,
  "channel": "System Notification",
  "condition": "doc.status==\"Open\"",
- "creation": "2021-09-29 12:01:34.836322",
+ "creation": "2021-10-21 10:25:13.953339",
  "date_changed": "expected_end_date",
  "days_in_advance": 1,
  "docstatus": 0,
@@ -12,12 +12,12 @@
  "event": "Days Before",
  "idx": 0,
  "is_standard": 1,
- "message": "Add your message here",
- "modified": "2021-10-21 09:36:04.573756",
+ "message": "before\u51fa\u53d1\u4e86\u5417",
+ "modified": "2021-10-21 10:25:13.953339",
  "modified_by": "1218408851@qq.com",
  "module": "Projects",
- "name": "\u5230\u671f\u901a\u77e5",
- "owner": "Administrator",
+ "name": "before",
+ "owner": "1218408851@qq.com",
  "recipients": [
   {
    "receiver_by_document_field": "owner",
@@ -26,5 +26,5 @@
  ],
  "send_system_notification": 0,
  "send_to_all_assignees": 0,
- "subject": "\u9879\u76ee{{doc.name}}\u5230\u671f\u901a\u77e5"
+ "subject": "{{ doc.name }} before"
 }

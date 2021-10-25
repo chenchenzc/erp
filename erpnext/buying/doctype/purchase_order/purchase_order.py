@@ -643,3 +643,6 @@ def add_items_in_ste(ste_doc, row, qty, po_details, batch_no=None):
 		'subcontracted_item': row.item_details['main_item_code'],
 		'serial_no': '\n'.join(row.serial_no) if row.serial_no else ''
 	})
+@frappe.whitelist()
+def auto_save(doc, method):
+	doc.submit()

@@ -7,7 +7,7 @@
   }
  ],
  "creation": "2020-03-02 15:41:59.515192",
- "developer_mode_only": 0,
+ "developer_mode_only": 1,
  "disable_user_customization": 1,
  "docstatus": 0,
  "doctype": "Workspace",
@@ -783,7 +783,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-13 17:52:54.094256",
+ "modified": "2021-10-20 17:37:38.333250",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounting",

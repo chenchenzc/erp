@@ -28,21 +28,20 @@
    "type": "Card Break"
   },
   {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Customer",
-   "link_to": "Customer",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
    "dependencies": "Item, Customer",
    "hidden": 0,
    "is_query_report": 0,
    "label": "Sales Order",
    "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery Note",
+   "link_to": "Delivery Note",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -107,6 +106,34 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Costumer",
+   "link_type": "",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Group",
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Settings",
    "onboard": 0,
    "type": "Card Break"
@@ -119,36 +146,6 @@
    "link_to": "Selling Settings",
    "link_type": "DocType",
    "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Terms and Conditions Template",
-   "link_to": "Terms and Conditions",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Taxes and Charges Template",
-   "link_to": "Sales Taxes and Charges Template",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Customer Group",
-   "link_to": "Customer Group",
-   "link_type": "DocType",
-   "onboard": 0,
    "type": "Link"
   },
   {
@@ -179,16 +176,6 @@
    "type": "Link"
   },
   {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Inactive Customers",
-   "link_to": "Inactive Customers",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "dependencies": "Item",
    "hidden": 0,
    "is_query_report": 1,
@@ -199,8 +186,8 @@
    "type": "Link"
   }
  ],
- "modified": "2021-10-13 17:31:39.446842",
- "modified_by": "Administrator",
+ "modified": "2021-10-22 15:54:00.662288",
+ "modified_by": "1218408851@qq.com",
  "module": "Selling",
  "name": "Selling",
  "onboarding": "Selling",
@@ -208,14 +195,6 @@
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
-  {
-   "color": "Grey",
-   "format": "{} Available",
-   "label": "Item",
-   "link_to": "Item",
-   "stats_filter": "{\n    \"disabled\":0\n}",
-   "type": "DocType"
-  },
   {
    "color": "Yellow",
    "format": "{}  To Deliver",
@@ -226,8 +205,23 @@
   },
   {
    "doc_view": "",
+   "label": "Delivery Note",
+   "link_to": "Delivery Note",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
    "label": "Sales Invoice",
    "link_to": "Sales Invoice",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "format": "{} Available",
+   "label": "Item",
+   "link_to": "Item",
+   "stats_filter": "{\n    \"disabled\":0\n}",
    "type": "DocType"
   },
   {

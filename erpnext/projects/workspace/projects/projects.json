@@ -65,51 +65,16 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Reports",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "Project",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Project wise Stock Tracking",
-   "link_to": "Project wise Stock Tracking",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Task",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Delayed Tasks Summary",
-   "link_to": "Delayed Tasks Summary",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2021-10-12 18:21:42.794532",
- "modified_by": "Administrator",
+ "modified": "2021-10-22 16:14:49.152771",
+ "modified_by": "1218408851@qq.com",
  "module": "Projects",
  "name": "Projects",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
-  {
-   "color": "Blue",
-   "format": "{} Assigned",
-   "label": "Task",
-   "link_to": "Task",
-   "stats_filter": "{\n    \"_assign\": [\"like\", '%' + frappe.session.user + '%'],\n    \"status\": \"Open\"\n}",
-   "type": "DocType"
-  },
   {
    "color": "Blue",
    "format": "{} Open",
@@ -119,9 +84,19 @@
    "type": "DocType"
   },
   {
-   "label": "Dashboard",
-   "link_to": "Project",
-   "type": "Dashboard"
+   "doc_view": "",
+   "label": "Project Template",
+   "link_to": "Project Template",
+   "stats_filter": "",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "format": "{} Assigned",
+   "label": "Task",
+   "link_to": "Task",
+   "stats_filter": "{\n    \"_assign\": [\"like\", '%' + frappe.session.user + '%'],\n    \"status\": \"Open\"\n}",
+   "type": "DocType"
   },
   {
    "doc_view": "List",
@@ -130,10 +105,9 @@
    "type": "Report"
   },
   {
-   "doc_view": "List",
-   "label": "Project Billing Summary",
-   "link_to": "Project Billing Summary",
-   "type": "Report"
+   "label": "Dashboard",
+   "link_to": "Project",
+   "type": "Dashboard"
   }
  ]
 }

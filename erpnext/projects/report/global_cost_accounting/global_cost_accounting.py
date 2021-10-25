@@ -17,19 +17,19 @@ def execute(filters=None):
 		totalmaoli += maoli
 		data.append([project.name, project.project_name,
 			project.project_type,project.customer,
-			project.total_purchase_amount,project.total_purchase_cost, 
-			project.total_sales_amount, project.total_billed_amount,
+			project.total_purchase_cost, 
+			project.total_billed_amount,
 			maoli])
 		
-	data.append(['总计','','','','','','','',totalmaoli]) 
+	data.append(['总计','','','','','',totalmaoli]) 
 	return columns, data
 
 def get_columns():
-	return [_("Project Id") + ":Link/Project:110", _("Project Name") + "::120",
-		_("Project Type") + "::100",_("Customer") + ":Link/Customer:100",
-		_("Total Purchase Amount")+":Currency:150",_("Total Purchase Cost") + ":Currency:150",
-		_("Total Sales Amount") + ":Currency:150",_("Total Billed Amount") + ":Currency:150", 
-		_("maoli")+":Currency:130"]
+	return [_("项目编号") + ":Link/Project:120", _("项目名称") + "::150",
+		_("项目类型") + "::120", _("客户") + ":Link/Customer:120",
+		_("总采购成本") + ":Currency:170",
+		_("总账单金额") + ":Currency:170", 
+		_("毛利")+":Currency:150"]
 
 def get_project_details(filters):
 	conditions = get_conditions(filters)

@@ -442,6 +442,7 @@
   {
    "fieldname": "sec_warehouse",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Subcontracting"
   },
   {
@@ -454,12 +455,14 @@
   },
   {
    "fieldname": "col_break_warehouse",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "default": "No",
    "fieldname": "is_subcontracted",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Supply Raw Materials",
    "options": "No\nYes",
@@ -469,6 +472,7 @@
    "depends_on": "eval:doc.is_subcontracted==\"Yes\"",
    "fieldname": "supplier_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Supplier Warehouse",
    "options": "Warehouse"
   },
@@ -585,12 +589,14 @@
   {
    "fieldname": "taxes_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
   },
   {
    "fieldname": "taxes_and_charges",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Purchase Taxes and Charges Template",
    "oldfieldname": "purchase_other_charges",
    "oldfieldtype": "Link",
@@ -599,11 +605,13 @@
   },
   {
    "fieldname": "column_break_50",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "shipping_rule",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Shipping Rule",
    "options": "Shipping Rule",
    "print_hide": 1
@@ -611,11 +619,13 @@
   {
    "fieldname": "section_break_52",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "hide_border": 1
   },
   {
    "fieldname": "taxes",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Purchase Taxes and Charges",
    "oldfieldname": "purchase_tax_details",
    "oldfieldtype": "Table",
@@ -625,11 +635,13 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Tax Breakup"
   },
   {
    "fieldname": "other_charges_calculation",
    "fieldtype": "Long Text",
+   "hidden": 1,
    "label": "Taxes and Charges Calculation",
    "no_copy": 1,
    "oldfieldtype": "HTML",
@@ -639,6 +651,7 @@
   {
    "fieldname": "totals",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Taxes and Charges",
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
@@ -647,6 +660,7 @@
    "depends_on": "base_taxes_and_charges_added",
    "fieldname": "base_taxes_and_charges_added",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Taxes and Charges Added (Company Currency)",
    "oldfieldname": "other_charges_added",
    "oldfieldtype": "Currency",
@@ -658,6 +672,7 @@
    "depends_on": "base_taxes_and_charges_deducted",
    "fieldname": "base_taxes_and_charges_deducted",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Taxes and Charges Deducted (Company Currency)",
    "oldfieldname": "other_charges_deducted",
    "oldfieldtype": "Currency",
@@ -669,6 +684,7 @@
    "depends_on": "base_total_taxes_and_charges",
    "fieldname": "base_total_taxes_and_charges",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Total Taxes and Charges (Company Currency)",
    "no_copy": 1,
    "oldfieldname": "total_tax",
@@ -679,12 +695,14 @@
   },
   {
    "fieldname": "column_break_39",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "depends_on": "taxes_and_charges_added",
    "fieldname": "taxes_and_charges_added",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Taxes and Charges Added",
    "oldfieldname": "other_charges_added_import",
    "oldfieldtype": "Currency",
@@ -696,6 +714,7 @@
    "depends_on": "taxes_and_charges_deducted",
    "fieldname": "taxes_and_charges_deducted",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Taxes and Charges Deducted",
    "oldfieldname": "other_charges_deducted_import",
    "oldfieldtype": "Currency",
@@ -707,6 +726,7 @@
    "depends_on": "total_taxes_and_charges",
    "fieldname": "total_taxes_and_charges",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Total Taxes and Charges",
    "options": "currency",
    "print_hide": 1,
@@ -717,12 +737,14 @@
    "collapsible_depends_on": "apply_discount_on",
    "fieldname": "discount_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Additional Discount"
   },
   {
    "default": "Grand Total",
    "fieldname": "apply_discount_on",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Apply Additional Discount On",
    "options": "\nGrand Total\nNet Total",
    "print_hide": 1
@@ -730,6 +752,7 @@
   {
    "fieldname": "base_discount_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Additional Discount Amount (Company Currency)",
    "options": "Company:company:default_currency",
    "print_hide": 1,
@@ -737,17 +760,20 @@
   },
   {
    "fieldname": "column_break_45",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "additional_discount_percentage",
    "fieldtype": "Float",
+   "hidden": 1,
    "label": "Additional Discount Percentage",
    "print_hide": 1
   },
   {
    "fieldname": "discount_amount",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Additional Discount Amount",
    "options": "currency",
    "print_hide": 1
@@ -850,6 +876,7 @@
   {
    "fieldname": "advance_paid",
    "fieldtype": "Currency",
+   "hidden": 1,
    "label": "Advance Paid",
    "no_copy": 1,
    "options": "party_account_currency",
@@ -860,17 +887,20 @@
    "collapsible": 1,
    "fieldname": "payment_schedule_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Payment Terms"
   },
   {
    "fieldname": "payment_terms_template",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Payment Terms Template",
    "options": "Payment Terms Template"
   },
   {
    "fieldname": "payment_schedule",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Payment Schedule",
    "no_copy": 1,
    "options": "Payment Schedule",
@@ -881,6 +911,7 @@
    "collapsible_depends_on": "terms",
    "fieldname": "terms_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Terms and Conditions",
    "oldfieldtype": "Section Break",
    "options": "fa fa-legal"
@@ -888,6 +919,7 @@
   {
    "fieldname": "tc_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Terms",
    "oldfieldname": "tc_name",
    "oldfieldtype": "Link",
@@ -897,6 +929,7 @@
   {
    "fieldname": "terms",
    "fieldtype": "Text Editor",
+   "hidden": 1,
    "label": "Terms and Conditions",
    "oldfieldname": "terms",
    "oldfieldtype": "Text Editor"
@@ -979,6 +1012,7 @@
    "collapsible": 1,
    "fieldname": "column_break5",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Printing Settings",
    "oldfieldtype": "Column Break",
    "print_hide": 1,
@@ -989,6 +1023,7 @@
    "allow_on_submit": 1,
    "fieldname": "letter_head",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Letter Head",
    "oldfieldname": "letter_head",
    "oldfieldtype": "Select",
@@ -999,6 +1034,7 @@
    "allow_on_submit": 1,
    "fieldname": "select_print_heading",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Print Heading",
    "no_copy": 1,
    "oldfieldname": "select_print_heading",
@@ -1009,19 +1045,22 @@
   },
   {
    "fieldname": "column_break_86",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "allow_on_submit": 1,
    "default": "0",
    "fieldname": "group_same_items",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Group same items",
    "print_hide": 1
   },
   {
    "fieldname": "language",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Print Language",
    "print_hide": 1
   },
@@ -1029,12 +1068,14 @@
    "collapsible": 1,
    "fieldname": "subscription_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Subscription Section"
   },
   {
    "allow_on_submit": 1,
    "fieldname": "from_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "From Date",
    "no_copy": 1,
    "print_hide": 1
@@ -1043,17 +1084,20 @@
    "allow_on_submit": 1,
    "fieldname": "to_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "To Date",
    "no_copy": 1,
    "print_hide": 1
   },
   {
    "fieldname": "column_break_97",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "auto_repeat",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Auto Repeat",
    "no_copy": 1,
    "options": "Auto Repeat",
@@ -1065,11 +1109,13 @@
    "depends_on": "eval: doc.auto_repeat",
    "fieldname": "update_auto_repeat_reference",
    "fieldtype": "Button",
+   "hidden": 1,
    "label": "Update Auto Repeat Reference"
   },
   {
    "fieldname": "tax_category",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Tax Category",
    "options": "Tax Category"
   },
@@ -1129,12 +1175,14 @@
    "default": "0",
    "fieldname": "apply_tds",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Apply Tax Withholding Amount"
   },
   {
    "depends_on": "eval: doc.apply_tds",
    "fieldname": "tax_withholding_category",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Tax Withholding Category",
    "options": "Tax Withholding Category"
   }
@@ -1143,7 +1191,7 @@
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-30 20:03:14.008804",
+ "modified": "2021-10-22 18:19:30.777213",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Purchase Order",

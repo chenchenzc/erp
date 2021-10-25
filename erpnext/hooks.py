@@ -297,7 +297,11 @@ doc_events = {
 		'validate': 'erpnext.regional.india.utils.validate_pan_for_india'
 	},
 	('Sales Invoice', 'Sales Order', 'Delivery Note', 'Purchase Invoice', 'Purchase Order', 'Purchase Receipt'): {
-		'validate': ['erpnext.regional.india.utils.set_place_of_supply']
+		'validate': ['erpnext.regional.india.utils.set_place_of_supply'],
+		"after_insert":"erpnext.auto_save.auto_save"
+	},
+	"Stock Entry":{
+		"after_insert":"erpnext.auto_save.auto_save"
 	},
 	"Contact": {
 		"on_trash": "erpnext.support.doctype.issue.issue.update_issue",

@@ -69,8 +69,7 @@
    "fieldtype": "Data",
    "label": "Project Name",
    "oldfieldtype": "Data",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "default": "Open",
@@ -424,6 +423,7 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Series",
    "no_copy": 1,
    "options": "PROJ-.####\n001--.YY/.MM/.DD",
@@ -443,7 +443,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 4,
- "modified": "2021-10-13 15:20:25.429342",
+ "modified": "2021-10-14 18:37:22.855602",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project",

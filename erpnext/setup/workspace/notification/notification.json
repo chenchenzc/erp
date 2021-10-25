@@ -1,0 +1,32 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-10-25 16:24:52.693911",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "Settings",
+ "extends_another_page": 1,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "label": "Notification",
+ "links": [],
+ "modified": "2021-10-25 16:24:52.693911",
+ "modified_by": "Administrator",
+ "module": "Setup",
+ "name": "Notification",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Notification",
+   "link_to": "Notification",
+   "type": "DocType"
+  }
+ ]
+}
