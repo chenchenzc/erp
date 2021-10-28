@@ -1180,6 +1180,7 @@
   {
    "fieldname": "source",
    "fieldtype": "Link",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Source",
@@ -1191,6 +1192,7 @@
   {
    "fieldname": "campaign",
    "fieldtype": "Link",
+   "hidden": 1,
    "hide_days": 1,
    "hide_seconds": 1,
    "label": "Campaign",
@@ -1562,7 +1564,7 @@
  "idx": 105,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-25 16:11:15.307239",
+ "modified": "2021-10-27 15:21:12.218230",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

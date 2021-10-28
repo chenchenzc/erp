@@ -91,6 +91,8 @@
   "is_sales_item",
   "column_break3",
   "max_discount",
+  "customer_details",
+  "customer_items",
   "deferred_revenue",
   "deferred_revenue_account",
   "enable_deferred_revenue",
@@ -101,8 +103,6 @@
   "enable_deferred_expense",
   "column_break_88",
   "no_of_months_exp",
-  "customer_details",
-  "customer_items",
   "item_tax_section_break",
   "taxes",
   "inspection_criteria",
@@ -231,10 +231,11 @@
    "oldfieldtype": "Select"
   },
   {
-   "default": "1",
+   "default": "0",
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "include_item_in_manufacturing",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Include Item In Manufacturing"
   },
   {
@@ -261,6 +262,7 @@
    "default": "0",
    "fieldname": "is_fixed_asset",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Fixed Asset",
    "set_only_once": 1
   },
@@ -313,11 +315,13 @@
   {
    "fieldname": "sb_barcodes",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Barcodes"
   },
   {
    "fieldname": "barcodes",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Barcodes",
    "options": "Item Barcode"
   },
@@ -426,6 +430,7 @@
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "serial_nos_and_batches",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Serial Nos and Batches"
   },
   {
@@ -433,6 +438,7 @@
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "has_batch_no",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Has Batch No",
    "no_copy": 1,
    "oldfieldname": "has_batch_no",
@@ -443,6 +449,7 @@
    "depends_on": "has_batch_no",
    "fieldname": "create_new_batch",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Automatically Create New Batch"
   },
   {
@@ -450,6 +457,7 @@
    "description": "Example: ABCD.#####. If series is set and Batch No is not mentioned in transactions, then automatic batch number will be created based on this series. If you always want to explicitly mention Batch No for this item, leave this blank. Note: this setting will take priority over the Naming Series Prefix in Stock Settings.",
    "fieldname": "batch_number_series",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Batch Number Series",
    "translatable": 1
   },
@@ -458,6 +466,7 @@
    "depends_on": "has_batch_no",
    "fieldname": "has_expiry_date",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Has Expiry Date"
   },
   {
@@ -465,6 +474,7 @@
    "depends_on": "has_batch_no",
    "fieldname": "retain_sample",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Retain Sample"
   },
   {
@@ -472,17 +482,20 @@
    "description": "Maximum sample quantity that can be retained",
    "fieldname": "sample_quantity",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Max Sample Quantity"
   },
   {
    "fieldname": "column_break_37",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "default": "0",
    "depends_on": "eval:doc.is_stock_item",
    "fieldname": "has_serial_no",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Has Serial No",
    "no_copy": 1,
    "oldfieldname": "has_serial_no",
@@ -493,6 +506,7 @@
    "description": "Example: ABCD.#####\nIf series is set and Serial No is not mentioned in transactions, then automatic serial number will be created based on this series. If you always want to explicitly mention Serial Nos for this item. leave this blank.",
    "fieldname": "serial_no_series",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Serial Number Series"
   },
   {
@@ -501,6 +515,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "variants_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Variants"
   },
   {
@@ -509,6 +524,7 @@
    "description": "If this item has variants, then it cannot be selected in sales orders etc.",
    "fieldname": "has_variants",
    "fieldtype": "Check",
+   "hidden": 1,
    "in_standard_filter": 1,
    "label": "Has Variants"
   },
@@ -517,6 +533,7 @@
    "depends_on": "has_variants",
    "fieldname": "variant_based_on",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Variant Based On",
    "options": "Item Attribute\nManufacturer"
   },
@@ -639,21 +656,25 @@
    "collapsible": 1,
    "fieldname": "foreign_trade_details",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Foreign Trade Details"
   },
   {
    "fieldname": "country_of_origin",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Country of Origin",
    "options": "Country"
   },
   {
    "fieldname": "column_break_59",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "customs_tariff_number",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Customs Tariff Number",
    "options": "Customs Tariff Number"
   },
@@ -695,12 +716,14 @@
    "collapsible": 1,
    "fieldname": "deferred_revenue",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Deferred Revenue"
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "deferred_revenue_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Deferred Revenue Account",
    "options": "Account"
@@ -709,28 +732,33 @@
    "default": "0",
    "fieldname": "enable_deferred_revenue",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Enable Deferred Revenue"
   },
   {
    "fieldname": "column_break_85",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "depends_on": "enable_deferred_revenue",
    "fieldname": "no_of_months",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "No of Months"
   },
   {
    "collapsible": 1,
    "fieldname": "deferred_expense_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Deferred Expense"
   },
   {
    "depends_on": "enable_deferred_expense",
    "fieldname": "deferred_expense_account",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Deferred Expense Account",
    "options": "Account"
@@ -739,16 +767,19 @@
    "default": "0",
    "fieldname": "enable_deferred_expense",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Enable Deferred Expense"
   },
   {
    "fieldname": "column_break_88",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "depends_on": "enable_deferred_expense",
    "fieldname": "no_of_months_exp",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "No of Months"
   },
   {
@@ -769,6 +800,7 @@
    "collapsible_depends_on": "taxes",
    "fieldname": "item_tax_section_break",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Item Tax",
    "oldfieldtype": "Section Break",
    "options": "fa fa-money"
@@ -777,6 +809,7 @@
    "description": "Will also apply for variants",
    "fieldname": "taxes",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Taxes",
    "oldfieldname": "item_tax",
    "oldfieldtype": "Table",
@@ -787,6 +820,7 @@
    "depends_on": "eval:!doc.is_fixed_asset",
    "fieldname": "inspection_criteria",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Inspection Criteria",
    "oldfieldtype": "Section Break",
    "options": "fa fa-search"
@@ -795,6 +829,7 @@
    "default": "0",
    "fieldname": "inspection_required_before_purchase",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Inspection Required before Purchase",
    "oldfieldname": "inspection_required",
    "oldfieldtype": "Select"
@@ -803,11 +838,13 @@
    "default": "0",
    "fieldname": "inspection_required_before_delivery",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Inspection Required before Delivery"
   },
   {
    "fieldname": "quality_inspection_template",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Quality Inspection Template",
    "options": "Quality Inspection Template",
    "print_hide": 1
@@ -817,6 +854,7 @@
    "depends_on": "is_stock_item",
    "fieldname": "manufacturing",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Manufacturing",
    "oldfieldtype": "Section Break",
    "options": "fa fa-cogs"
@@ -824,6 +862,7 @@
   {
    "fieldname": "default_bom",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Default BOM",
    "no_copy": 1,
@@ -837,13 +876,15 @@
    "description": "If subcontracted to a vendor",
    "fieldname": "is_sub_contracted_item",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Supply Raw Materials for Purchase",
    "oldfieldname": "is_sub_contracted_item",
    "oldfieldtype": "Select"
   },
   {
    "fieldname": "column_break_74",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "customer_code",
@@ -866,6 +907,7 @@
    "depends_on": "eval:(!doc.is_item_from_hub && !doc.is_fixed_asset)",
    "fieldname": "hub_publishing_sb",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Hub Publishing Details"
   },
   {
@@ -873,11 +915,13 @@
    "description": "Publish Item to hub.erpnext.com",
    "fieldname": "publish_in_hub",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Publish in Hub"
   },
   {
    "fieldname": "hub_category_to_publish",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Hub Category to Publish",
    "read_only": 1
   },
@@ -885,6 +929,7 @@
    "description": "Publish \"In Stock\" or \"Not in Stock\" on Hub based on stock available in this warehouse.",
    "fieldname": "hub_warehouse",
    "fieldtype": "Link",
+   "hidden": 1,
    "ignore_user_permissions": 1,
    "label": "Hub Warehouse",
    "options": "Warehouse"
@@ -893,6 +938,7 @@
    "default": "0",
    "fieldname": "synced_with_hub",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Synced With Hub",
    "read_only": 1
   },
@@ -920,12 +966,14 @@
   {
    "fieldname": "default_item_manufacturer",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Default Item Manufacturer",
    "read_only": 1
   },
   {
    "fieldname": "default_manufacturer_part_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Default Manufacturer Part No",
    "read_only": 1
   },
@@ -933,6 +981,7 @@
    "collapsible": 1,
    "fieldname": "more_information_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "More Information"
   },
   {
@@ -940,6 +989,7 @@
    "depends_on": "published_in_website",
    "fieldname": "published_in_website",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Published in Website",
    "read_only": 1
   }
@@ -950,7 +1000,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 1,
- "modified": "2021-09-10 12:23:07.277077",
+ "modified": "2021-10-27 15:18:12.037617",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

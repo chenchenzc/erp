@@ -31,7 +31,7 @@ def get(chart_name = None, chart = None, no_cache = None, filters = None, from_d
         doc = frappe.get_doc('Task',item.name)
         # 存在预期时间就需要比较时间差，筛选1.当天比预计早2.当天即预计结束
         if doc.exp_end_date:
-            timeStatus=TimeStatus(frappe.utils.nowdate(),doc.exp_end_date)
+            timeStatus=TimeStatus(frappe.utils.nowdate(),doc.exp_start_date,doc.exp_end_date)
             # 根据难度添加进不同的list的位置
             if(timeStatus=="inExpected" or timeStatus=="atExpected"):
                 for x in range(0,4):
@@ -45,7 +45,7 @@ def get(chart_name = None, chart = None, no_cache = None, filters = None, from_d
     for i in range(0,4):
         totalNumber.append(len(listcurrentday[i]))
         ddlNumber.append(len(listcurrentdue[i]))
-        
+
     return {
         "labels": labels,
         "datasets": [
@@ -59,7 +59,10 @@ def get(chart_name = None, chart = None, no_cache = None, filters = None, from_d
             }
         ]    
     }
-def TimeStatus(now,expend) :
+def TimeStatus(now,expstart,expend) :
+    if expend == None:
+        pass
+    
     # expend/now是“yy-mm-dd”格式
     # 转换成时间戳1.获取时间2.转换成时间数组time.strptime()3.转换成时间戳time.mktime()
     exp_end_dateArray=time.strptime(str(expend),"%Y-%m-%d")
@@ -67,11 +70,28 @@ def TimeStatus(now,expend) :
     exp_end_dateStamp=time.mktime(exp_end_dateArray)
     nowdateStamp=time.mktime(nowdateArray)
     timeDelta=exp_end_dateStamp-nowdateStamp
-    if (timeDelta<0):
-        return "outExpected"
+    # 判断预计开始日期，开始日期在当日之后，不进行判断，开始日期在当日之前
+    if expstart != None:
+        exp_start_dateArray=time.strptime(str(expstart),"%Y-%m-%d")
+        exp_start_dateStamp=time.mktime(exp_start_dateArray)
 
-    if (timeDelta==0):
-        return "atExpected" 
-    
-    if (timeDelta>0):
-        return "inExpected" 
+        if nowdateStamp >= exp_start_dateStamp:
+            if (timeDelta<0):
+                return "outExpected"
+
+            if (timeDelta==0):
+                return "atExpected" 
+
+            if (timeDelta>0):
+                return "inExpected" 
+        else:
+            return "outExpected"
+    else:
+        if (timeDelta<0):
+            return "outExpected"
+
+        if (timeDelta==0):
+            return "atExpected" 
+
+        if (timeDelta>0):
+            return "inExpected"
