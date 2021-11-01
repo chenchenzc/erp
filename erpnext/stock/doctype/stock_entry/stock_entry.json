@@ -106,8 +106,6 @@
   {
    "fieldname": "stock_entry_type",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Stock Entry Type",
    "options": "Stock Entry Type",
    "reqd": 1
@@ -206,6 +204,8 @@
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Posting Date",
    "no_copy": 1,
    "oldfieldname": "posting_date",
@@ -308,8 +308,6 @@
    "depends_on": "from_warehouse",
    "fieldname": "source_warehouse_address",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Source Warehouse Address",
    "options": "Address"
   },
@@ -338,8 +336,6 @@
    "depends_on": "to_warehouse",
    "fieldname": "target_warehouse_address",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Target Warehouse Address",
    "options": "Address"
   },
@@ -638,7 +634,7 @@
  "idx": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-25 15:57:40.274069",
+ "modified": "2021-11-01 16:39:42.010794",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry",

@@ -19,6 +19,7 @@ from frappe.utils import (
 	strip,
 )
 from frappe.utils.html_utils import clean_html
+from erpnext.stock.dashboard.item_dashboard import get_data
 
 import erpnext
 from erpnext.controllers.item_variant import (
@@ -187,6 +188,9 @@ class Item(Document):
 					{'warehouse_name': _('Stores'), 'company': default.company})
 
 			if default_warehouse:
+				print("qty=self.opening_stock")
+				print(self.opening_stock)
+
 				stock_entry = make_stock_entry(item_code=self.name, target=default_warehouse, qty=self.opening_stock,
 					rate=self.valuation_rate, company=default.company, posting_date=getdate(), posting_time=nowtime())
 
@@ -228,6 +232,8 @@ class Item(Document):
 				to_remove.append(d)
 
 		[self.remove(d) for d in to_remove]
+
+
 
 	def update_website_item(self):
 		"""Update Website Item if change in Item impacts it."""

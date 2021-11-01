@@ -35,6 +35,8 @@ frappe.ui.form.on("Purchase Order", {
 	},
 
 	onload: function(frm) {
+
+
 		set_schedule_date(frm);
 		if (!frm.doc.transaction_date){
 			frm.set_value('transaction_date', frappe.datetime.get_today())
@@ -45,6 +47,7 @@ frappe.ui.form.on("Purchase Order", {
 		});
 
 		erpnext.accounts.dimensions.setup_dimension_filters(frm, frm.doctype);
+		
 	},
 
 	apply_tds: function(frm) {

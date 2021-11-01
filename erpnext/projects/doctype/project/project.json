@@ -153,7 +153,7 @@
    "label": "Priority",
    "oldfieldname": "priority",
    "oldfieldtype": "Select",
-   "options": "Medium\nLow\nHigh"
+   "options": "Low\nMedium\nHigh"
   },
   {
    "fieldname": "department",
@@ -310,6 +310,7 @@
    "read_only": 1
   },
   {
+   "default": "\u5357\u4eac\u897f\u4e09\u827e - NJC3I",
    "fieldname": "cost_center",
    "fieldtype": "Link",
    "label": "Default Cost Center",
@@ -460,7 +461,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 4,
- "modified": "2021-10-27 15:06:58.812693",
+ "modified": "2021-11-01 14:05:08.076643",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project",

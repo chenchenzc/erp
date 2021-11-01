@@ -132,6 +132,8 @@ def make_stock_entry(**args):
 		'cost_center': args.cost_center,
 		'expense_account': args.expense_account
 	})
+	print("数量是")
+	print(s.items[0].qty)
 
 	s.set_stock_entry_type()
 	if not args.do_not_save:

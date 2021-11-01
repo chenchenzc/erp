@@ -60,4 +60,5 @@ def get_data(item_code=None, warehouse=None, item_group=None,
 			'reserved_qty_for_sub_contract': flt(item.reserved_qty_for_sub_contract, precision),
 			'actual_qty': flt(item.actual_qty, precision),
 		})
+		print(item.actual_qty)
 	return items

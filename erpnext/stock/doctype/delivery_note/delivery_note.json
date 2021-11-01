@@ -916,6 +916,7 @@
    "collapsible_depends_on": "transporter",
    "fieldname": "transporter_info",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Transporter Info",
    "options": "fa fa-truck",
    "print_hide": 1
@@ -923,6 +924,7 @@
   {
    "fieldname": "transporter",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Transporter",
    "options": "Supplier",
    "print_hide": 1,
@@ -932,6 +934,7 @@
   {
    "fieldname": "driver",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Driver",
    "options": "Driver",
    "print_hide": 1
@@ -939,6 +942,7 @@
   {
    "fieldname": "lr_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Transport Receipt No",
    "oldfieldname": "lr_no",
    "oldfieldtype": "Data",
@@ -949,12 +953,14 @@
   {
    "fieldname": "vehicle_no",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Vehicle No",
    "print_hide": 1
   },
   {
    "fieldname": "col_break34",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "print_width": "50%",
    "width": "50%"
   },
@@ -962,6 +968,7 @@
    "fetch_from": "transporter.name",
    "fieldname": "transporter_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Transporter Name",
    "print_hide": 1,
    "read_only": 1
@@ -970,6 +977,7 @@
    "fetch_from": "driver.full_name",
    "fieldname": "driver_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Driver Name",
    "print_hide": 1
   },
@@ -977,6 +985,7 @@
    "default": "Today",
    "fieldname": "lr_date",
    "fieldtype": "Date",
+   "hidden": 1,
    "label": "Transport Receipt Date",
    "oldfieldname": "lr_date",
    "oldfieldtype": "Date",
@@ -1005,6 +1014,7 @@
   {
    "fieldname": "campaign",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Campaign",
    "oldfieldname": "campaign",
    "oldfieldtype": "Link",
@@ -1014,6 +1024,7 @@
   {
    "fieldname": "source",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Source",
    "oldfieldname": "source",
    "oldfieldtype": "Select",
@@ -1023,6 +1034,7 @@
   {
    "fieldname": "column_break5",
    "fieldtype": "Column Break",
+   "hidden": 1,
    "oldfieldtype": "Column Break",
    "print_hide": 1,
    "print_width": "50%",
@@ -1031,6 +1043,7 @@
   {
    "fieldname": "per_billed",
    "fieldtype": "Percent",
+   "hidden": 1,
    "label": "% Amount Billed",
    "no_copy": 1,
    "print_hide": 1,
@@ -1047,6 +1060,7 @@
   {
    "fieldname": "territory",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Territory",
    "options": "Territory",
    "print_hide": 1
@@ -1288,12 +1302,14 @@
    "fetch_from": "customer.is_internal_customer",
    "fieldname": "is_internal_customer",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Is Internal Customer",
    "read_only": 1
   },
   {
    "fieldname": "inter_company_reference",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Inter Company Reference",
    "options": "Purchase Receipt"
   },
@@ -1324,6 +1340,7 @@
    "fetch_from": "customer.represents_company",
    "fieldname": "represents_company",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Represents Company",
    "options": "Company",
    "read_only": 1
@@ -1355,7 +1372,7 @@
  "idx": 146,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-25 15:32:44.333476",
+ "modified": "2021-10-29 17:43:22.727008",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Delivery Note",

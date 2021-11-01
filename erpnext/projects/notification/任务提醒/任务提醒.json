@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2021-10-29 09:52:31.085117",
+ "date_changed": "exp_start_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Task",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "\u4efb\u52a1\u5c06\u8981\u5f00\u59cb\uff0c\u8bf7\u505a\u597d\u76f8\u5e94\u51c6\u5907",
+ "modified": "2021-10-29 09:54:50.816359",
+ "modified_by": "1218408851@qq.com",
+ "module": "Projects",
+ "name": "\u4efb\u52a1\u63d0\u9192",
+ "owner": "1218408851@qq.com",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{  doc.subject  }} \u5f00\u59cb\u63d0\u9192"
+}

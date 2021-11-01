@@ -6,6 +6,7 @@ frappe.provide("erpnext.accounts.dimensions");
 {% include 'erpnext/stock/landed_taxes_and_charges_common.js' %};
 
 frappe.ui.form.on('Stock Entry', {
+	
 	setup: function(frm) {
 		frm.set_indicator_formatter('item_code', function(doc) {
 			if (!doc.s_warehouse) {
@@ -636,8 +637,23 @@ frappe.ui.form.on('Stock Entry', {
 
 	apply_putaway_rule: function (frm) {
 		if (frm.doc.apply_putaway_rule) erpnext.apply_putaway_rule(frm, frm.doc.purpose);
-	}
+	},
+
+	// msgprint:function(frm){
+	// 	frappe.call({
+	// 		method:"erpnext.stock.doctype.stock_entry.stock_entry.msgprint",
+	// 		args:{
+	// 			"name":frm.doc.name,
+	// 			"owner":frm.doc.owner
+	// 		},
+	// 		callback:function(res){
+	// 			msgprint(__(res.message))
+	// 		}
+	// 	})
+	// }
+
 });
+
 
 frappe.ui.form.on('Stock Entry Detail', {
 	qty: function(frm, cdt, cdn) {
